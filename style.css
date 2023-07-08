@@ -1,0 +1,164 @@
+:root {
+    --backgroundColor: rgba(246, 241, 209);
+    --colorShadeA: rgb(0, 0, 0);
+    --colorShadeB: rgb(91, 92, 91);
+    --colorShadeC: rgb(92, 99, 95);
+    --colorShadeD: rgb(219, 223, 219);
+    --colorShadeE: rgb(171, 171, 171);
+  }
+body{
+    background-image: url("bg.gif");
+    background-color: rgba(0,0,0,0.4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+ 
+h1{
+    color: rgb(217, 236, 199);
+    text-align: center;
+    
+}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--colorShadeA);
+    font-weight: 700;
+    font-family: inherit;
+    height:100px;
+    width:150px;
+  }
+  
+  button.b1{
+    padding: 1em 2em;
+    border: 2px solid var(--colorShadeA);
+    border-radius: 1em;
+    background: var(--colorShadeE);
+    transform-style: preserve-3d;
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+  }
+  button.b1::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--colorShadeC);
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeA);
+    transform: translate3d(0, 0.75em, -1em);
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+  }
+  
+  button.b1:hover {
+    background: var(--colorShadeD);
+    transform: translate(0, 0.375em);
+  }
+  
+  button.b1:hover::before {
+    transform: translate3d(0, 0.75em, -1em);
+  }
+  
+  button.b1:active {
+    transform: translate(0em, 0.75em);
+  }
+  
+  button.b1:active::before {
+    transform: translate3d(0, 0, -1em);
+  
+    box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
+  }
+/*.b1{
+    padding:20px;
+    height:80px;
+    width:80px;
+}*/
+button.b2{
+    background-color: rgb(176, 63, 63);
+    
+}
+button.b2:hover {
+    background: rgb(214, 106, 106);
+    transform: translate(0, 0.375em);
+  }
+  button.b2::before {
+    
+    background: rgb(146, 16, 16);
+    box-shadow: 0 0 0 2px rgb(50, 14, 14), 0 0.75em 0 0 black;
+   
+  }
+  button.b3{
+    background-color: rgb(122, 129, 243);
+    
+}
+button.b3:hover {
+    background: rgb(109, 150, 248);
+    transform: translate(0, 0.375em);
+  }
+  button.b3::before {
+    
+    background: rgb(75, 53, 164);
+    box-shadow: 0 0 0 2px rgb(50, 14, 14), 0 0.75em 0 0 black;
+   
+  }
+  button.ee{
+    background-color: rgb(99, 173, 163);
+    
+}
+button.ee:hover {
+    background: rgb(144, 211, 229);
+    transform: translate(0, 0.375em);
+  }
+  button.ee::before {
+    
+    background: rgb(19, 118, 116);
+    box-shadow: 0 0 0 2px rgb(50, 14, 14), 0 0.75em 0 0 black;
+   
+  }
+  button.back{
+    background-color: rgb(167, 238, 146);
+    
+}
+button.back:hover {
+    background: rgb(185, 234, 207);
+    transform: translate(0, 0.375em);
+  }
+  button.back::before {
+    
+    background: rgb(76, 161, 50);
+    box-shadow: 0 0 0 2px rgb(50, 14, 14), 0 0.75em 0 0 black;
+   
+  }
+  .background{
+ background-image: url("bg.gif");
+  }
+.container{
+    display: flex;
+    flex-direction: column;
+    
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    margin:0.5rem 0.2rem;
+}
+.input{
+    padding:8px;
+    font-weight: 800;
+    font-size: 2.5rem;
+    border: black solid 10px;
+    border-radius: 7px;
+    color:black;
+    background-color: gray;
+}
